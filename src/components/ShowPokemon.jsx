@@ -6,18 +6,18 @@ import { footerVariants } from "../utils/motion";
 import { useState, useEffect } from "react";
 import { Pagination } from "../components";
 
-let pokemon = [];
-
 const ShowPokemon = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const getData = async () => {
       const resp = await fetch(
-        `https://pokeapi.co/api/v2/pokemon?limit=100&offset=0`
+        `https://pokeapi.co/api/v2/pokemon?limit=120&offset=0`
       );
       const data = await resp.json();
       const poke = data.results;
+      let pokemon = [];
+      console.log(poke);
       for (let index = 0; index < poke.length; index++) {
         const element = poke[index];
         let respSingle = await fetch(element.url);

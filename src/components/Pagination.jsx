@@ -10,7 +10,6 @@ const Pagination = ({ data }) => {
   const endOffset = itemOffset + itemsPerPage;
   const currentItems = data.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(data.length / itemsPerPage);
-
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % data.length;
 

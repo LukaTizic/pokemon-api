@@ -8,19 +8,16 @@ import { useState, useEffect } from "react";
 const Pokemon = () => {
   const [search, setSearch] = useState("ditto");
   const [pokemonData, setPokemonData] = useState([]);
-  console.log(pokemonData);
 
   const onClick = (e) => {
     setSearch(e.target.value);
   };
-  console.log(search);
 
   const getPokemon = async () => {
     try {
       const response = await axios.get(
         `https://pokeapi.co/api/v2/pokemon/${search.toLowerCase()}`
       );
-      console.log(response);
       setPokemonData(response.data);
       setSearch("");
     } catch (error) {
