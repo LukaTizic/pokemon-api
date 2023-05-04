@@ -17,7 +17,7 @@ const Pagination = ({ data }) => {
   };
   return (
     <div className='mb-[120px]'>
-      <div className='grid sm:grid-cols-1 lg:grid-cols-6  capitalize  mx-20 gap-2 '>
+      <div className='grid sm:grid-cols-1 lg:grid-cols-4 xl:grid-cols-6  capitalize    mx-20 gap-2 '>
         {currentItems.map((pokemon) => (
           <PokemonsCard
             key={pokemon.id}

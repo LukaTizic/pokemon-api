@@ -8,6 +8,7 @@ import SocialMedia from "./SocialMedia";
 import Evolution from "./Evolution";
 import ShowPokemon from "./ShowPokemon";
 import Pagination from "./Pagination";
+import Loading from "./Loading";
 
 export {
   About,
@@ -20,4 +21,5 @@ export {
   Evolution,
   ShowPokemon,
   Pagination,
+  Loading,
 };

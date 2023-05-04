@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 import { footerVariants } from "../utils/motion";
 
 import { useState, useEffect } from "react";
-import { Pagination } from "../components";
+import { Loading, Pagination } from "../components";
 
 const ShowPokemon = () => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     const getData = async () => {
       const resp = await fetch(
         `https://pokeapi.co/api/v2/pokemon?limit=120&offset=0`
@@ -25,6 +27,7 @@ const ShowPokemon = () => {
         pokemon.push(singlePoke);
       }
       setData(pokemon);
+      setLoading(false);
     };
 
     getData();
@@ -32,7 +35,7 @@ const ShowPokemon = () => {
 
   return (
     <motion.div variants={footerVariants} initial='hidden' whileInView='show'>
-      <Pagination data={data} />
+      {!loading ? <Pagination data={data} /> : <Loading />}
     </motion.div>
   );
 };
