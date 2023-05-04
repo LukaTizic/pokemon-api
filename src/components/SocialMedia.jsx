@@ -28,7 +28,7 @@ const SocialMedia = () => {
         <a href='https://github.com/LukaTizic' target='_blank'>
           <FaGithubSquare className='text-[45px] hover:text-[50px] hover:text-white ' />
         </a>
-        <a href='https://www.instagram.com/alutza7/' target='_blank'>
+        <a href='https://www.instagram.com' target='_blank'>
           <FaInstagram className='text-[45px] hover:text-[50px] hover:text-white ' />
         </a>
       </div>
