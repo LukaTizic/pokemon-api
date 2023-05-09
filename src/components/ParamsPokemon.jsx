@@ -5,7 +5,6 @@ import Loading from "./Loading";
 
 const ParamsPokemon = () => {
   const { id } = useParams();
-  console.log(id);
   const [paramsPokemon, setParamsPokemon] = useState();
   const [loading, setLoading] = useState(false);
 
@@ -24,7 +23,6 @@ const ParamsPokemon = () => {
     getPokemon();
   }, []);
 
-  console.log(id);
   return (
     <div>
       {!loading ? (

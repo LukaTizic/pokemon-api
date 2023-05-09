@@ -19,7 +19,6 @@ const ShowPokemon = () => {
       const data = await resp.json();
       const poke = data.results;
       let pokemon = [];
-      console.log(poke);
       for (let index = 0; index < poke.length; index++) {
         const element = poke[index];
         let respSingle = await fetch(element.url);
