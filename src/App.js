@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import PokemonPage from "./pages/PokemonPage";
 import AllPokemons from "./pages/AllPokemons";
 import ErrorPage from "./pages/ErrorPage";
+import { ParamsPokemon } from "./components";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route path='/pokemon' element={<PokemonPage />} />
+          <Route path='/pokemon/:id' element={<ParamsPokemon />} />
           <Route path='/allpokemons/' element={<AllPokemons />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>

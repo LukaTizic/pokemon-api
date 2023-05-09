@@ -9,6 +9,7 @@ import Evolution from "./Evolution";
 import ShowPokemon from "./ShowPokemon";
 import Pagination from "./Pagination";
 import Loading from "./Loading";
+import ParamsPokemon from "./ParamsPokemon";
 
 export {
   About,
@@ -22,4 +23,5 @@ export {
   ShowPokemon,
   Pagination,
   Loading,
+  ParamsPokemon,
 };

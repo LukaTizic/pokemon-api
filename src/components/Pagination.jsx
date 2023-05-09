@@ -27,16 +27,15 @@ const Pagination = ({ data }) => {
         ))}
       </div>
       <ReactPaginate
-        breakLabel='...'
         nextLabel='next >'
         onPageChange={handlePageClick}
-        pageRangeDisplayed={3}
+        pageRangeDisplayed={10}
         pageCount={pageCount}
         previousLabel='< previous'
         renderOnZeroPageCount={null}
         containerClassName='flex items-center justify-center mt-20  text-gray-400 cursor-pointer '
-        pageClassName=' border-2 border-solid border-gray-800 hover:bg-gray-500 hover:text-white w-10 h-10 flex items-center justify-center rounded-[10px] lg:mx-4'
-        activeClassName='bg-sky-400 text-white'
+        pageClassName='  border-gray-800 hover:text-white hover:text-white text-2xl p-[20px] flex items-center justify-center rounded-[10px] lg:mx-4'
+        activeClassName='text-sky-400 '
         breakClassName='font-bold'
       />
     </div>
