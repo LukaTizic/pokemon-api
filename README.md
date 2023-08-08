@@ -1,4 +1,4 @@
-![pokemons](<(image.png)>)
+![Alt text](image.png)
 
 # Getting Started with Create React App
 
