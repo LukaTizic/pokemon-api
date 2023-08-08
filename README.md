@@ -1,8 +1,3 @@
-![pokemons](https://prnt.sc/AIqtjw2qPStb)
-
-
-
-
 
 
 # Getting Started with Create React App
