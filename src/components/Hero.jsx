@@ -12,14 +12,9 @@ const Hero = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className='w-full flex-row items-align 2xl:flex justify-space-around items-center mt-10 lg:mt-40  2xl:mx-20 gap-5'>
-        <img
-          className='h-[500px] object-contain opacity-80 hover:opacity-95'
-          src={pikachu}
-          alt='pikachu'
-        />
+      <div className='w-full flex-row items-align 2xl:flex justify-space-around items-center mt-5 lg:mt-20  2xl:mx-20'>
         <div className='flex flex-col items-center text-[#c7c7c7]'>
-          <h2 className='  leading-[26px] lg:leading-[32px] text-center w-fit  text-[20px] lg:text-[26px] mt-[20px] lg:mt-[80px]  cursor-default 2xl:mr-[100px]'>
+          <h2 className='  leading-[26px] lg:leading-[33px] text-start w-fit  text-[20px] lg:text-[26px] mt-[20px] lg:mt-[80px]  cursor-default 2xl:mr-[100px]'>
             Pokémon is a series of video games developed by Game Freak and
             published by Nintendo and The Pokémon Company under the Pokémon
             media franchise. It was created by{" "}
@@ -32,7 +27,7 @@ const Hero = () => {
             <span className='text-purple-800'>Violet</span>, was released on
             November 18, 2022, for the Nintendo Switch.
           </h2>
-          <div className='flex flex-row gap-10'>
+          <div className='flex flex-row justify-between gap-10 mr-[60px]  '>
             <Link to={"/pokemon"}>
               <Button title={"Search Pokemon"} />
             </Link>
@@ -41,6 +36,11 @@ const Hero = () => {
             </Link>
           </div>
         </div>
+        <img
+          className='hidden 2xl:block w-fit object-contain opacity-80 hover:opacity-95  mr-5'
+          src={pikachu}
+          alt='pikachu'
+        />
       </div>
     </motion.div>
   );

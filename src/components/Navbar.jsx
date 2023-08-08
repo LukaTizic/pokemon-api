@@ -33,7 +33,7 @@ const Navbar = () => {
         <ul className=' flex justify-between items-center flex-1 gap-4  pr-[30px] '>
           {navLinks.map((id) => (
             <li
-              className='divide-x  pr-5 border-r-2 hover:border-b-2 hover:text-white'
+              className='divide-x  pr-5 border-r-2 hover:border-b-2 hover:text-[#38bdf8]'
               key={id.id}
             >
               <Link to={`/${id.id}`}>{id.title} </Link>

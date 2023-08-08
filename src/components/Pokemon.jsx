@@ -24,7 +24,7 @@ const Pokemon = () => {
       alert("Please provide value");
     }
   };
-
+  console.log(pokemonData);
   useEffect(() => {
     getPokemon();
   }, []);
@@ -46,15 +46,19 @@ const Pokemon = () => {
           <AiOutlineSearch />
         </button>
       </div>
-      <div>
+
+      <div className='flex flex-col items-center '>
         <img
           className='min-h-[500px]'
           src={pokemonData.sprites?.other["official-artwork"].front_default}
           alt=''
         />
+        <h1 className='mb-[150px] uppercase underline text-white text-4xl  '>
+          {pokemonData.name}
+        </h1>
       </div>
       <div>
-        <h1 className='text-white w-full mb-[150px]'>
+        <h1 className='text-white w-full mb-[250px]'>
           Pokémon is set in the fictional Pokémon universe. There are numerous
           regions that have appeared in the various media of the Pokémon
           franchise. There are 9 main series regions set in the main series

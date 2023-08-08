@@ -2,10 +2,13 @@ import React from "react";
 
 const Loading = () => {
   return (
-    <div role='status' className='flex justify-center items-center h-[70vh] '>
+    <div
+      role='status'
+      className='flex flex-col justify-center items-center h-[70vh] '
+    >
       <svg
         aria-hidden='true'
-        className='w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600'
+        className='w-12 h-12 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-[#38bdf8]'
         viewBox='0 0 100 101'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
@@ -19,7 +22,10 @@ const Loading = () => {
           fill='currentFill'
         />
       </svg>
-      <span class='sr-only'>Loading...</span>
+      <span class=' text-white mt-5 text-2xl'>
+        Loading, pease give us few minutes while we{" "}
+        <span className='  text-[#38bdf8]'>fetch them all</span>!
+      </span>
     </div>
   );
 };
