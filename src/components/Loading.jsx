@@ -23,7 +23,7 @@ const Loading = () => {
         />
       </svg>
       <span class=' text-white mt-5 text-2xl'>
-        Loading, pease give us few minutes while we{" "}
+        Loading, please give us few minutes while we{" "}
         <span className='  text-[#38bdf8]'>fetch them all</span>!
       </span>
     </div>
