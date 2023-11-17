@@ -5,7 +5,7 @@ This is a `Pokemon website` project with [`Demo-link`](https://pokemon-api-fz7k.
  # <h3 align="center">Landing page / Hero section</h1>
 ![Alt text](image-1.png)
 
- # <h3 align="center">Pokemons page / AllPokemons section</h1>
+ # <h3 align="center">Pokemons page / AllPokemons page</h1>
 ![Alt text](image.png)
 
 # Getting Started with Create React App
