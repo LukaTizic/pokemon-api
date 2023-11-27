@@ -1,4 +1,3 @@
-# You can see live site by clicking on the [link](https://pokemon-api-fz7k.vercel.app/)
 This is a `Pokemon website` project with [`Demo-link`](https://pokemon-api-fz7k.vercel.app/).
 
 
