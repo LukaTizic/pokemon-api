@@ -1,4 +1,4 @@
-This is a `Pokemon website` project with [`Demo-link`](https://pokemon-api-fz7k.vercel.app/).
+This is a `Pokemon website ⚡️` project with [`Demo-link`](https://pokemon-api-fz7k.vercel.app/).
 
 
  # <h3 align="center">Landing page / Hero section</h1>
