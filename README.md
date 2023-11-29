@@ -7,6 +7,9 @@ This is a `Pokemon website ⚡️` project with [`Demo-link`](https://pokemon-ap
  # <h3 align="center">Pokemons page / AllPokemons page</h1>
 ![Alt text](image.png)
 
+---
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
