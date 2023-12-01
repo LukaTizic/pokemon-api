@@ -12,13 +12,13 @@ This is a `Pokemon website ⚡️` project with [`Demo-link`](https://pokemon-ap
 
 # Getting Started with Create React App
 
-* ReactJS
-* React-dom
-* React-icons
+* reactJS
+* react-dom
+* react-icons
 * react-paginate
-* Framer Motion
-* Tailwinds
-* Axios
+* framer motion
+* tailwinds
+* axios
   
 
 
