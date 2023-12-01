@@ -11,8 +11,11 @@ This is a `Pokemon website ⚡️` project with [`Demo-link`](https://pokemon-ap
 
 
 # Getting Started with Create React App
+
+* ReactJS
 * Framer Motion
-* UseState / UseEffect
+* Tailwinds
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
