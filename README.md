@@ -12,6 +12,7 @@ This is a `Pokemon website ⚡️` project with [`Demo-link`](https://pokemon-ap
 
 # Getting Started with Create React App
 
+
 * ReactJS
 * Framer Motion
 * Tailwinds
@@ -22,6 +23,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm install`
 
 ### `npm start`
 
