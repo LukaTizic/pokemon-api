@@ -11,6 +11,8 @@ This is a `Pokemon website ⚡️` project with [`Demo-link`](https://pokemon-ap
 
 
 # Getting Started with Create React App
+* Framer Motion
+* UseState / UseEffect
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
