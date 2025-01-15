@@ -1,42 +1,47 @@
 import React from "react";
-import { useState } from "react";
 import ReactPaginate from "react-paginate";
 import PokemonsCard from "./PokemonsCard";
 
-const Pagination = ({ data }) => {
-  const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 12;
+const Pagination = ({
+  data = [],
+  currentPage,
+  itemsPerPage,
+  totalItems,
+  onPageChange,
+}) => {
+  const pageCount = Math.ceil(totalItems / itemsPerPage);
 
-  const endOffset = itemOffset + itemsPerPage;
-  const currentItems = data.slice(itemOffset, endOffset);
-  const pageCount = Math.ceil(data.length / itemsPerPage);
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % data.length;
-
-    setItemOffset(newOffset);
+    onPageChange(event.selected);
   };
+
   return (
-    <div className='mb-[120px]'>
-      <div className='grid sm:grid-cols-1 lg:grid-cols-4 xl:grid-cols-6  capitalize    mx-20 gap-2 '>
-        {currentItems.map((pokemon) => (
-          <PokemonsCard
-            key={pokemon.id}
-            name={pokemon.name}
-            imgUrl={pokemon.sprites.other["official-artwork"].front_default}
-          />
-        ))}
+    <div className="mb-[120px]">
+      <div className="grid sm:grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 capitalize mx-20 gap-2">
+        {data.length > 0 ? (
+          data.map((pokemon) => (
+            <PokemonsCard
+              key={pokemon.id}
+              name={pokemon.name}
+              imgUrl={pokemon.sprites.other["official-artwork"].front_default}
+            />
+          ))
+        ) : (
+          <p className="text-center text-gray-500">No Pokémon available.</p>
+        )}
       </div>
       <ReactPaginate
-        nextLabel='next >'
+        nextLabel="next >"
         onPageChange={handlePageClick}
-        pageRangeDisplayed={10}
+        pageRangeDisplayed={5}
         pageCount={pageCount}
-        previousLabel='< previous'
+        previousLabel="< previous"
         renderOnZeroPageCount={null}
-        containerClassName='flex items-center justify-center mt-20  text-gray-400 cursor-pointer '
-        pageClassName='  border-gray-800 hover:text-white hover:text-white text-2xl p-[20px] flex items-center justify-center rounded-[10px] lg:mx-4'
-        activeClassName='text-sky-400 '
-        breakClassName='font-bold'
+        containerClassName="flex items-center justify-center mt-20 text-gray-400 cursor-pointer"
+        pageClassName="border-gray-800 hover:text-white text-2xl p-[20px] flex items-center justify-center rounded-[10px] lg:mx-4"
+        activeClassName="text-sky-400"
+        breakClassName="font-bold"
+        forcePage={currentPage}
       />
     </div>
   );
