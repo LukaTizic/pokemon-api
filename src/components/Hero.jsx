@@ -12,22 +12,22 @@ const Hero = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className='w-full flex-row items-align 2xl:flex justify-space-around items-center mt-5 lg:mt-20  2xl:mx-20'>
-        <div className='flex flex-col items-center text-[#c7c7c7]'>
-          <h2 className='  leading-[26px] lg:leading-[33px] text-start w-fit  text-[20px] lg:text-[26px] mt-[20px] lg:mt-[80px]  cursor-default 2xl:mr-[100px]'>
+      <div className="w-full flex-row items-align 2xl:flex justify-space-around items-center mt-5 lg:mt-20  2xl:mx-20">
+        <div className="flex flex-col items-center text-[#c7c7c7]">
+          <h2 className="  leading-[26px] lg:leading-[33px] text-start w-fit  text-[20px] lg:text-[26px] mt-[20px] lg:mt-[80px]  cursor-default 2xl:mr-[100px]">
             Pokémon is a series of video games developed by Game Freak and
             published by Nintendo and The Pokémon Company under the Pokémon
             media franchise. It was created by{" "}
-            <span className='underline'>Satoshi Tajiri</span> with assistance
-            from <span className='underline hover:white '>Ken Sugimori</span>.
+            <span className="underline">Satoshi Tajiri</span> with assistance
+            from <span className="underline hover:white ">Ken Sugimori</span>.
             The main series of role-playing video games (RPGs), referred as the
             "core series" by their developers, have continued on each generation
             of Nintendo's handhelds. The most recently released core series
-            game, Pokémon <span className='text-red-800'>Scarlet</span> and{" "}
-            <span className='text-purple-800'>Violet</span>, was released on
+            game, Pokémon <span className="text-red-800">Scarlet</span> and{" "}
+            <span className="text-purple-800">Violet</span>, was released on
             November 18, 2022, for the Nintendo Switch.
           </h2>
-          <div className='flex flex-row justify-between gap-10 mr-[60px]  '>
+          <div className="flex flex-row justify-between gap-10 mr-[60px]  ">
             <Link to={"/pokemon"}>
               <Button title={"Search Pokemon"} />
             </Link>
@@ -37,9 +37,9 @@ const Hero = () => {
           </div>
         </div>
         <img
-          className='hidden 2xl:block w-fit object-contain opacity-80 hover:opacity-95  mr-5'
+          className="hidden 2xl:block w-fit object-contain opacity-80 hover:opacity-95  mr-5"
           src={pikachu}
-          alt='pikachu'
+          alt="pikachu"
         />
       </div>
     </motion.div>

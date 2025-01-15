@@ -10,19 +10,17 @@ import { ParamsPokemon } from "./components";
 
 function App() {
   return (
-    <div className='  lg:mx-[110px] sm:mx-[50px] mx-[50px]  '>
+    <div className="  lg:mx-[110px] sm:mx-[50px] mx-[50px]  ">
       <BrowserRouter>
         <Navbar />
         <SocialMedia />
         <Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route path='/pokemon' element={<PokemonPage />} />
-          <Route path='/pokemon/:id' element={<ParamsPokemon />} />
-          <Route path='/allpokemons/' element={<AllPokemons />} />
-          <Route path='*' element={<ErrorPage />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/pokemon" element={<PokemonPage />} />
+          <Route path="/pokemon/:id" element={<ParamsPokemon />} />
+          <Route path="/allpokemons/" element={<AllPokemons />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
-
-        <Footer />
       </BrowserRouter>
     </div>
   );

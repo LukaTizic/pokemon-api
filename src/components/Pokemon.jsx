@@ -30,14 +30,14 @@ const Pokemon = () => {
   }, []);
 
   return (
-    <div className='flex flex-col justify-center  items-center'>
-      <div className='flex flex-row justify-center'>
+    <div className=" flex flex-col justify-center  items-center">
+      <div className="flex flex-row justify-center">
         <input
-          className='placeholder:italic placeholder:text-slate-400 capitalize block w-[350px] bg-white  border border-slate-300 rounded-md py-2 px-5 pr-3 shadow-sm focus:outline-none focus:border-red focus:ring-sky-500 focus:ring-1 sm:text-sm'
-          type='text'
+          className="placeholder:italic placeholder:text-slate-400 capitalize block w-[350px] bg-white  border border-slate-300 rounded-md py-2 px-5 pr-3 shadow-sm focus:outline-none focus:border-red focus:ring-sky-500 focus:ring-1 sm:text-sm"
+          type="text"
           value={search}
           onChange={onClick}
-          placeholder='Type specific pokemon here'
+          placeholder="Type specific pokemon here"
         />
         <button
           className='py-2 px-4 hover:bg-blue-500 text-white font-bold text-2xl rounded-lg shadow-md bg-blue-700 "'
@@ -47,18 +47,18 @@ const Pokemon = () => {
         </button>
       </div>
 
-      <div className='flex flex-col items-center '>
+      <div className="flex flex-col items-center ">
         <img
-          className='min-h-[500px]'
+          className="min-h-[500px]"
           src={pokemonData.sprites?.other["official-artwork"].front_default}
-          alt=''
+          alt=""
         />
-        <h1 className='mb-[150px] uppercase underline text-white text-4xl  '>
+        <h1 className="mb-[150px] uppercase underline text-white text-4xl  ">
           {pokemonData.name}
         </h1>
       </div>
       <div>
-        <h1 className='text-white w-full mb-[250px]'>
+        <h1 className="text-white w-full ">
           Pokémon is set in the fictional Pokémon universe. There are numerous
           regions that have appeared in the various media of the Pokémon
           franchise. There are 9 main series regions set in the main series
